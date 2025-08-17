@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Bioinformatics: Getting Started with Biological Data Analysis"
-date: "2024-08-15"
+date: "2025-08-15"
 author: "Shell2R Team"
 category: "Bioinformatics"
 excerpt: "Learn the fundamentals of bioinformatics and discover how computational methods are revolutionizing biological research. This comprehensive tutorial covers basic concepts, essential tools, and practical workflows that every aspiring bioinformatician should know."
