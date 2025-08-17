@@ -1,6 +1,6 @@
 ---
 title: "Command Line Mastery: A Detailed Guide for Bioinformatics Beginners"
-date: "2024-08-14"
+date: "2025-08-14"
 author: "Shell2R Team"
 category: "Shell Commands"
 excerpt: "Master the command line from scratch — learn essential Unix commands, file manipulation, and text processing skills that every bioinformatician needs to succeed. This comprehensive guide takes you from complete beginner to confident command line user."
