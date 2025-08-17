@@ -1,6 +1,6 @@
 ---
 title: "Conda and Mamba: The Complete Installation and Usage Guide for Bioinformatics"
-date: "2024-08-13"
+date: "2025-08-13"
 author: "Shell2R Team"
 category: "Conda"
 excerpt: "Master package management in bioinformatics with Conda and Mamba — learn installation, environment management, and how to install essential tools like Seurat for single-cell analysis. Say goodbye to dependency hell forever!"
