@@ -1,6 +1,6 @@
 ---
 title: "Single-cell RNA-seq Analysis: From Raw Data to Biological Insights"
-date: "2024-08-12"
+date: "2025-08-12"
 author: "Shell2R Team"
 category: "Single-cell RNA-seq"
 excerpt: "Discover the revolutionary world of single-cell RNA sequencing — learn how this technology is transforming our understanding of cellular heterogeneity, development, and disease. Master the essential concepts and analysis workflows."
