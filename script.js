@@ -28,7 +28,6 @@ function setupEventListeners() {
 // Load tutorials from markdown files
 async function loadTutorials() {
     try {
-        // List of tutorial files (you'll add more as you create them)
         const tutorialFiles = [
             'introduction-to-bioinformatics.md',
             'command-line-basics-detailed.md',
@@ -40,13 +39,15 @@ async function loadTutorials() {
         
         for (const file of tutorialFiles) {
             try {
-                const response = await fetch(`lessons/${file}`);
+                const response = await fetch(`./lessons/${file}`); // <-- added './'
                 if (response.ok) {
                     const content = await response.text();
                     const tutorial = parseTutorial(content, file);
                     if (tutorial) {
                         tutorials.push(tutorial);
                     }
+                } else {
+                    console.warn(`Failed to fetch tutorial: ${file} (status: ${response.status})`);
                 }
             } catch (error) {
                 console.warn(`Could not load tutorial: ${file}`, error);
@@ -59,11 +60,8 @@ async function loadTutorials() {
         // Update the UI
         updateTutorialsList();
         updateSidebar();
-        
     } catch (error) {
-        console.error('Error loading tutorials:', error);
-        // Show fallback content
-        showFallbackTutorials();
+        console.error('Failed to load tutorials', error);
     }
 }
 
