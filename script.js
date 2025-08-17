@@ -40,7 +40,7 @@ async function loadTutorials() {
         
         for (const file of tutorialFiles) {
             try {
-                const response = await fetch(`lessons/${file}`);
+                const response = await fetch(`./lessons/${file}`);
                 if (response.ok) {
                     const content = await response.text();
                     const tutorial = parseTutorial(content, file);
@@ -564,7 +564,7 @@ async function loadStaticPage(pageName) {
     const staticContent = document.getElementById('static-content');
     
     try {
-        const response = await fetch(`pages/${pageName}.html`);
+        const response = await fetch(`./pages/${pageName}.html`);
         if (response.ok) {
             const content = await response.text();
             staticContent.innerHTML = content;
