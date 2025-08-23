@@ -38,14 +38,6 @@ shell2r-simple/
     ├── DEPLOYMENT_GUIDE.md
     └── TUTORIAL_GUIDE.md
 ```
-## 📞 Support
-
-For questions or issues:
-- Check the `TUTORIAL_GUIDE.md` for detailed tutorial creation instructions
-- Review `DEPLOYMENT_GUIDE.md` for deployment help
-- Open an issue in the GitHub repository
-
-
 
 ---
 
