@@ -9,7 +9,6 @@ image: "images/sc.png"
 
 ![Bioinformatics](images/sc.png)
 
-# Writing a Submission Script
 
 ## A basic script
 
