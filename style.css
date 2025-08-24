@@ -367,6 +367,12 @@ pre code {
     }
 }
 
+.adsense-container {
+  display: none; /* hide by default */
+}
+
+
+
 /* Dark mode support (optional) */
 @media (prefers-color-scheme: dark) {
     /* Add dark mode styles here if needed */
@@ -406,6 +412,3 @@ textarea:focus {
     }
 }
 
-.adsense-container {
-  display: none; /* hide by default */
-}
