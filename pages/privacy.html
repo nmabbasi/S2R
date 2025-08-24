@@ -3,65 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Shell2R - Learn Bioinformatics Step by Step</title>
-    <meta name="description" content="Shell2R Privacy Policy - Learn how we collect, use, and protect your personal information when you use our bioinformatics tutorials and educational content.">
+    <title>Privacy Policy | Shell2R</title>
+    <link rel="stylesheet" href="../style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+<body class="bg-gray-50 text-gray-900">
+    <!-- Header - Consistent with Disclaimer -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
                 <!-- Logo -->
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-lg font-bold text-lg">
-                            S2R
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S2R</span>
+                    </div>
+                    <h1 class="text-2xl font-bold text-gray-900">Shell2R</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="../index.html#tutorials" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Tutorials</a>
+                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center">
+                            Legal
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-1">
+                                <a href="privacy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Privacy Policy</a>
+                                <a href="terms.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Terms of Service</a>
+                                <a href="disclaimer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Disclaimer</a>
+                                <a href="cookie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cookie Policy</a>
+                            </div>
                         </div>
-                        <span class="ml-2 text-xl font-bold text-gray-900">Shell2R</span>
                     </div>
                 </div>
-
-                <!-- Desktop Navigation -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4">
-                        <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
-                        <a href="index.html#tutorials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tutorials</a>
-                        <a href="about.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
-                        <a href="contact.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
-                        <button onclick="showLegal()" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Legal</button>
-                    </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 py-2">Home</a>
+                    <a href="../index.html#tutorials" class="text-gray-700 hover:text-blue-600 py-2">Tutorials</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 py-2">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
+                    <a href="privacy.html" class="text-gray-700 hover:text-blue-600 py-2">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-700 hover:text-blue-600 py-2">Terms of Service</a>
+                    <a href="disclaimer.html" class="text-gray-700 hover:text-blue-600 py-2">Disclaimer</a>
+                    <a href="cookie.html" class="text-gray-700 hover:text-blue-600 py-2">Cookie Policy</a>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <!-- Header -->
-        <div class="mb-12">
-            <h1 class="text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-            <p class="text-lg text-gray-600">
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+            <h1 class="text-4xl font-bold mb-6 text-gray-900">Privacy Policy</h1>
+            <p class="text-lg text-gray-600 mb-4">
                 Last updated: August 17, 2025
             </p>
-        </div>
-
-        <!-- Content -->
-        <div class="prose prose-lg max-w-none">
+            <!-- Privacy Policy Content -->
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Introduction</h2>
                 <p class="text-gray-700 mb-4">
-                    Shell2R ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website shell2r.com and use our services.
+                    Shell2R ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.
                 </p>
                 <p class="text-gray-700 mb-4">
                     Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access or use our website.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Information We Collect</h2>
-                
                 <h3 class="text-xl font-semibold text-gray-900 mb-3">Personal Information</h3>
                 <p class="text-gray-700 mb-4">
                     We may collect personal information that you voluntarily provide to us when you:
@@ -72,7 +96,6 @@
                     <li>Participate in surveys or feedback forms</li>
                     <li>Interact with our website or services</li>
                 </ul>
-
                 <h3 class="text-xl font-semibold text-gray-900 mb-3">Automatically Collected Information</h3>
                 <p class="text-gray-700 mb-4">
                     When you visit our website, we may automatically collect certain information about your device and usage patterns, including:
@@ -86,14 +109,12 @@
                     <li>Device information and screen resolution</li>
                 </ul>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Google Advertising and Cookies</h2>
-                
                 <div class="bg-blue-50 p-6 rounded-lg border border-blue-200 mb-6">
                     <h3 class="text-xl font-semibold text-gray-900 mb-3">Google AdSense</h3>
                     <p class="text-gray-700 mb-4">
-                        We use Google AdSense to display advertisements on our website. Google AdSense uses cookies and other tracking technologies to serve ads based on your prior visits to our website or other websites on the Internet.
+                        We use Google AdSense to display advertisements on our website. Google AdSense uses cookies and other tracking technologies to serve ads based on your prior visits to our website and other sites on the Internet.
                     </p>
                     <p class="text-gray-700 mb-4">
                         <strong>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.</strong>
@@ -102,15 +123,13 @@
                         <strong>Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.</strong>
                     </p>
                 </div>
-
                 <h3 class="text-xl font-semibold text-gray-900 mb-3">Opting Out of Personalized Advertising</h3>
                 <p class="text-gray-700 mb-4">
-                    <strong>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener">Ads Settings</a>.</strong>
+                    <strong>Users may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" class="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener">Google Ads Settings</a>.</strong>
                 </p>
                 <p class="text-gray-700 mb-4">
                     Alternatively, you can direct users to opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="http://www.aboutads.info" class="text-blue-600 hover:text-blue-800 underline" target="_blank" rel="noopener">www.aboutads.info</a>.
                 </p>
-
                 <h3 class="text-xl font-semibold text-gray-900 mb-3">Third-Party Vendors and Ad Networks</h3>
                 <p class="text-gray-700 mb-4">
                     We work with third-party vendors and ad networks that may serve ads on our site. These vendors may also use cookies and other tracking technologies. Some of our advertising partners include:
@@ -123,7 +142,6 @@
                     You may visit the websites of these vendors to opt out of the use of cookies for personalized advertising (if the vendor or ad network offers this capability).
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">How We Use Your Information</h2>
                 <p class="text-gray-700 mb-4">
@@ -139,7 +157,6 @@
                     <li>Complying with legal obligations</li>
                 </ul>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Information Sharing and Disclosure</h2>
                 <p class="text-gray-700 mb-4">
@@ -153,14 +170,12 @@
                     <li>With advertising partners as described in this policy</li>
                 </ul>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Data Security</h2>
                 <p class="text-gray-700 mb-4">
                     We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the Internet or electronic storage is 100% secure.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Cookies and Tracking Technologies</h2>
                 <p class="text-gray-700 mb-4">
@@ -176,7 +191,6 @@
                     You can control cookie settings through your browser preferences. However, disabling cookies may affect the functionality of our website.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Your Rights and Choices</h2>
                 <p class="text-gray-700 mb-4">
@@ -194,28 +208,24 @@
                     To exercise these rights, please contact us using the information provided in the "Contact Us" section below.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Children's Privacy</h2>
                 <p class="text-gray-700 mb-4">
                     Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">International Data Transfers</h2>
                 <p class="text-gray-700 mb-4">
                     Your information may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable data protection laws and that appropriate safeguards are in place.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Changes to This Privacy Policy</h2>
                 <p class="text-gray-700 mb-4">
                     We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date. We encourage you to review this Privacy Policy periodically.
                 </p>
             </section>
-
             <section class="mb-8">
                 <h2 class="text-2xl font-bold text-gray-900 mb-4">Contact Us</h2>
                 <p class="text-gray-700 mb-4">
@@ -236,45 +246,63 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Footer - Consistent with Disclaimer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-4 gap-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center mb-4">
-                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-lg font-bold text-lg">
-                            S2R
-                        </div>
-                        <span class="ml-2 text-xl font-bold">Shell2R</span>
-                    </div>
-                    <p class="text-gray-300 mb-4">
-                        Learn Bioinformatics and Single-cell RNA-seq Step by Step
-                    </p>
-                </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-300 hover:text-white">Home</a></li>
-                        <li><a href="index.html#tutorials" class="text-gray-300 hover:text-white">Tutorials</a></li>
-                        <li><a href="about.html" class="text-gray-300 hover:text-white">About</a></li>
-                        <li><a href="contact.html" class="text-gray-300 hover:text-white">Contact</a></li>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">S2R</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Shell2R</h3>
+                    </div>
+                    <p class="text-gray-400">Learn Bioinformatics and Single-cell RNA-seq Step by Step</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors">Tutorials</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
                     </ul>
                 </div>
+                
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
-                    <ul class="space-y-2">
-                        <li><a href="privacy.html" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials('Bioinformatics')">Bioinformatics</a></li>
+                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials('Shell Commands')">Shell Commands</a></li>
+                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials('Conda')">Conda</a></li>
+                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials('Single-cell RNA-seq')">Single-cell RNA-seq</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a></li>
+                        <li><a href="cookie.html" class="hover:text-white transition-colors">Cookie Policy</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-300">&copy; 2025 Shell2R. All rights reserved.</p>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Shell2R. All rights reserved. | Educational content for bioinformatics learning.</p>
             </div>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Mobile menu toggle script -->
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>
-
