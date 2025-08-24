@@ -7,8 +7,6 @@ excerpt: "Learn the fundamentals of bioinformatics and discover how computationa
 image: "images/bioinformatics-intro.png"
 ---
 
-# Introduction to Bioinformatics: Getting Started with Biological Data Analysis
-
 ![Bioinformatics Overview](images/bioinformatics-intro.png)
 
 ## What is Bioinformatics?
