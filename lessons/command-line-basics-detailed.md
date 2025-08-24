@@ -7,8 +7,6 @@ excerpt: "Master the command line from scratch — learn essential Unix commands
 image: "images/command-line-terminal.png"
 ---
 
-# Command Line Mastery: A Detailed Guide for Bioinformatics Beginners
-
 ![Command Line Terminal](images/command-line-terminal.png)
 
 ## Why the Command Line Matters in Bioinformatics
