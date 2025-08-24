@@ -304,9 +304,11 @@ function updateTutorialsList() {
                 by ${tutorial.author}
             </div>
             <p class="excerpt">${tutorial.excerpt}</p>
-            <a href="#" class="read-more" onclick="event.stopPropagation(); showTutorial(\'${tutorial.id}\')">
-                Read More →
-            </a>
+            <a href="#" 
+   class="read-more text-teal-700 hover:text-teal-900 font-medium transition-colors duration-200" 
+   onclick="event.stopPropagation(); showTutorial('${tutorial.id}')">
+   Read More →
+</a>
         </article>
     `).join('');
 }
