@@ -7,8 +7,6 @@ excerpt: "Master package management in bioinformatics with Conda and Mamba — l
 image: "images/conda-environment.png"
 ---
 
-# Conda and Mamba: The Complete Installation and Usage Guide for Bioinformatics
-
 ![Conda Environment Management](images/conda-environment.png)
 
 ## Why Package Management Matters in Bioinformatics
