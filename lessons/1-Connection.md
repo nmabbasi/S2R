@@ -9,7 +9,6 @@ image: "images/connection.png"
 
 ![Bioinformatics](images/connection.png)
 
-# Connection
 
 # Connecting with SSH (Windows)
 
