@@ -7,7 +7,6 @@ excerpt: "Discover the revolutionary world of single-cell RNA sequencing — lea
 image: "images/single-cell-analysis.png"
 ---
 
-# Single-cell RNA-seq Analysis: From Raw Data to Biological Insights
 
 ![Single-cell RNA-seq Analysis](images/single-cell-analysis.png)
 
