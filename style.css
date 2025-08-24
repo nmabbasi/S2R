@@ -406,3 +406,6 @@ textarea:focus {
     }
 }
 
+.adsense-container {
+  display: none; /* hide by default */
+}
