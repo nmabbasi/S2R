@@ -9,8 +9,6 @@ image: "images/hpc.png"
 
 ![Bioinformatics](images/hpc.png)
 
-# HPC Basic Commands
-
 ## Modules
 
 Some programs on the HPC cluster are only accessible by loading specific modules. For example, to compile MPI programs with `mpic++`, you would load the appropriate module:
