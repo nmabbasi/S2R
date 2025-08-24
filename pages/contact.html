@@ -1,179 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Shell2R | Learn Bioinformatics and Single-cell RNA-seq Step by Step</title>
-    <link rel="stylesheet" href="../style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Shell2R - Learn Bioinformatics Step by Step</title>
+  <meta name="description" content="Get in touch with Shell2R for tutorials, collaborations, and bioinformatics learning support.">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <!-- Header - Replicate from index.html for consistency -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <nav class="container mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <!-- Logo -->
-                <div class="flex items-center space-x-2">
-                    <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                        <span class="text-white font-bold text-lg">S2R</span>
-                    </div>
-                    <h1 class="text-2xl font-bold text-gray-900">Shell2R</h1>
-                </div>
-                
-                <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
-                    <a href="../index.html#tutorials" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Tutorials</a>
-                    <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
-                    <a href="contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
-                    <div class="relative group">
-                        <button class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center">
-                            Legal
-                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                        <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
-                            <div class="py-1">
-                                <a href="privacy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Privacy Policy</a>
-                                <a href="terms.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Terms of Service</a>
-                                <a href="disclaimer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Disclaimer</a>
-                                <a href="cookie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cookie Policy</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button class="md:hidden" onclick="toggleMobileMenu()">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-            
-            <!-- Mobile Navigation -->
-            <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
-                <div class="flex flex-col space-y-2">
-                    <a href="../index.html" class="text-gray-700 hover:text-blue-600 py-2">Home</a>
-                    <a href="../index.html#tutorials" class="text-gray-700 hover:text-blue-600 py-2">Tutorials</a>
-                    <a href="about.html" class="text-gray-700 hover:text-blue-600 py-2">About</a>
-                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
-                    <a href="privacy.html" class="text-gray-700 hover:text-blue-600 py-2">Privacy Policy</a>
-                    <a href="terms.html" class="text-gray-700 hover:text-blue-600 py-2">Terms of Service</a>
-                    <a href="disclaimer.html" class="text-gray-700 hover:text-blue-600 py-2">Disclaimer</a>
-                    <a href="cookie.html" class="text-gray-700 hover:text-blue-600 py-2">Cookie Policy</a>
-                </div>
-            </div>
-        </nav>
-    </header>
+<body class="bg-gray-50 text-gray-900 min-h-screen flex flex-col">
 
-    <main class="container mx-auto px-4 py-8">
-        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
-            <h1 class="text-4xl font-bold mb-6 text-gray-900">Contact Shell2R</h1>
-            
-            <p class="text-lg text-gray-700 mb-4">
-                We'd love to hear from you! Whether you have questions about our tutorials, suggestions for new content, or collaboration inquiries, feel free to reach out.
-            </p>
-            
-            <h2 class="text-2xl font-semibold mb-4 text-gray-800">General Inquiries</h2>
-            <p class="text-gray-700 mb-4">
-                For general questions, feedback, or support, please send us an email at:
-            </p>
-            <p class="text-lg font-semibold text-blue-600 mb-6">
-                <a href="mailto:info@shell2r.com" class="hover:underline">info@shell2r.com</a>
-            </p>
-
-            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Tutorial Suggestions & Content Requests</h2>
-            <p class="text-gray-700 mb-4">
-                Have an idea for a new tutorial or a specific bioinformatics topic you'd like us to cover? We're always looking for ways to improve our content and provide what our community needs. Share your thoughts with us at:
-            </p>
-            <p class="text-lg font-semibold text-blue-600 mb-6">
-                <a href="mailto:content@shell2r.com" class="hover:underline">content@shell2r.com</a>
-            </p>
-
-            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Collaboration & Partnerships</h2>
-            <p class="text-gray-700 mb-4">
-                If you're interested in collaborating with Shell2R, whether for educational initiatives, research projects, or industry partnerships, please contact us at:
-            </p>
-            <p class="text-lg font-semibold text-blue-600 mb-6">
-                <a href="mailto:partnerships@shell2r.com" class="hover:underline">partnerships@shell2r.com</a>
-            </p>
-
-            <h2 class="text-2xl font-semibold mb-4 text-gray-800">Connect With Us</h2>
-            <p class="text-gray-700 mb-4">
-                Follow us on our social media channels to stay updated with the latest tutorials, news, and bioinformatics insights:
-            </p>
-            <ul class="list-disc list-inside text-gray-700 mb-6 space-y-2">
-                <li><a href="#" class="text-blue-600 hover:underline">Twitter</a></li>
-                <li><a href="#" class="text-blue-600 hover:underline">LinkedIn</a></li>
-                <li><a href="#" class="text-blue-600 hover:underline">GitHub</a></li>
-            </ul>
-
-            <p class="text-lg text-gray-700">
-                We aim to respond to all inquiries within 24-48 business hours. Thank you for your patience and interest in Shell2R!
-            </p>
+  <!-- Header (unchanged, from index.html for consistency) -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <div class="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+            <span class="text-white font-bold text-lg">S2R</span>
+          </div>
+          <h1 class="text-2xl font-bold text-gray-900">Shell2R</h1>
         </div>
-    </main>
-
-    <!-- Footer - Replicate from index.html for consistency -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                            <span class="text-white font-bold">S2R</span>
-                        </div>
-                        <h3 class="text-xl font-bold">Shell2R</h3>
-                    </div>
-                    <p class="text-gray-400">Learn Bioinformatics and Single-cell RNA-seq Step by Step</p>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors">Tutorials</a></li>
-                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials(\'Bioinformatics\')">Bioinformatics</a></li>
-                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials(\'Shell Commands\')">Shell Commands</a></li>
-                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials(\'Conda\')">Conda</a></li>
-                        <li><a href="../index.html#tutorials" class="hover:text-white transition-colors" onclick="filterTutorials(\'Single-cell RNA-seq\')">Single-cell RNA-seq</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
-                        <li><a href="terms.html" class="hover:text-white transition-colors">Terms of Service</a></li>
-                        <li><a href="disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a></li>
-                        <li><a href="cookie.html" class="hover:text-white transition-colors">Cookie Policy</a></li>
-                    </ul>
-                </div>
+        <!-- Desktop Navigation -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="../index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Home</a>
+          <a href="../index.html#tutorials" class="nav-link text-gray-700 hover:text-blue-600 font-medium">Tutorials</a>
+          <a href="about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium">About</a>
+          <a href="contact.html" class="nav-link text-blue-600 bg-blue-50 px-3 py-2 rounded-md font-medium">Contact</a>
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600 font-medium flex items-center">
+              Legal
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <a href="privacy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Privacy Policy</a>
+              <a href="terms.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Terms of Service</a>
+              <a href="disclaimer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Disclaimer</a>
+              <a href="cookie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cookie Policy</a>
             </div>
-            
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 Shell2R. All rights reserved. | Educational content for bioinformatics learning.</p>
-            </div>
+          </div>
         </div>
-    </footer>
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden" onclick="toggleMobileMenu()">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
+        <div class="flex flex-col space-y-2">
+          <a href="../index.html" class="text-gray-700 hover:text-blue-600 py-2">Home</a>
+          <a href="../index.html#tutorials" class="text-gray-700 hover:text-blue-600 py-2">Tutorials</a>
+          <a href="about.html" class="text-gray-700 hover:text-blue-600 py-2">About</a>
+          <a href="contact.html" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
+          <a href="privacy.html" class="text-gray-700 hover:text-blue-600 py-2">Privacy Policy</a>
+          <a href="terms.html" class="text-gray-700 hover:text-blue-600 py-2">Terms of Service</a>
+          <a href="disclaimer.html" class="text-gray-700 hover:text-blue-600 py-2">Disclaimer</a>
+          <a href="cookie.html" class="text-gray-700 hover:text-blue-600 py-2">Cookie Policy</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Mobile menu toggle script -->
-    <script>
-        function toggleMobileMenu() {
-            const mobileMenu = document.getElementById("mobile-menu");
-            mobileMenu.classList.toggle("hidden");
-        }
-    </script>
+  <!-- Main -->
+  <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-4xl mx-auto">
+      <!-- Page Header -->
+      <div class="text-center mb-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Contact Us</h1>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          We’d love to hear from you! Whether you have questions, feedback, or collaboration ideas, feel free to reach out.
+        </p>
+      </div>
+
+      <!-- Sections -->
+      <div class="space-y-12">
+        <!-- General -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-3">General Inquiries</h2>
+          <p class="text-gray-700 mb-2">For questions, feedback, or support:</p>
+          <a href="mailto:info@shell2r.com" class="text-blue-600 font-medium hover:underline">info@shell2r.com</a>
+        </section>
+
+        <!-- Suggestions -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-3">Tutorial Suggestions</h2>
+          <p class="text-gray-700 mb-2">Got an idea for a tutorial or topic we should cover?</p>
+          <a href="mailto:content@shell2r.com" class="text-blue-600 font-medium hover:underline">content@shell2r.com</a>
+        </section>
+
+        <!-- Collaborations -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-3">Collaboration & Partnerships</h2>
+          <p class="text-gray-700 mb-2">Interested in working with Shell2R?</p>
+          <a href="mailto:partnerships@shell2r.com" class="text-blue-600 font-medium hover:underline">partnerships@shell2r.com</a>
+        </section>
+
+        <!-- Social -->
+        <section>
+          <h2 class="text-2xl font-semibold text-gray-900 mb-3">Connect With Us</h2>
+          <ul class="list-disc list-inside text-gray-700 space-y-2">
+            <li><a href="#" class="text-blue-600 hover:underline">Twitter</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline">LinkedIn</a></li>
+            <li><a href="#" class="text-blue-600 hover:underline">GitHub</a></li>
+          </ul>
+        </section>
+
+        <!-- Response Time -->
+        <section class="bg-blue-50 border border-blue-200 p-6 rounded-lg">
+          <p class="text-gray-700">
+            We aim to respond to all inquiries within <strong>24–48 business hours</strong>.  
+            Thank you for your patience and interest in Shell2R!
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer (unchanged) -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold">S2R</span>
+            </div>
+            <h3 class="text-xl font-bold">Shell2R</h3>
+          </div>
+          <p class="text-gray-400">Learn Bioinformatics and Single-cell RNA-seq Step by Step</p>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="../index.html#tutorials" class="hover:text-white transition-colors">Tutorials</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Categories</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="../index.html#tutorials" onclick="filterTutorials('Bioinformatics')" class="hover:text-white">Bioinformatics</a></li>
+            <li><a href="../index.html#tutorials" onclick="filterTutorials('Shell Commands')" class="hover:text-white">Shell Commands</a></li>
+            <li><a href="../index.html#tutorials" onclick="filterTutorials('Conda')" class="hover:text-white">Conda</a></li>
+            <li><a href="../index.html#tutorials" onclick="filterTutorials('Single-cell RNA-seq')" class="hover:text-white">Single-cell RNA-seq</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2 text-gray-400">
+            <li><a href="privacy.html" class="hover:text-white">Privacy Policy</a></li>
+            <li><a href="terms.html" class="hover:text-white">Terms of Service</a></li>
+            <li><a href="disclaimer.html" class="hover:text-white">Disclaimer</a></li>
+            <li><a href="cookie.html" class="hover:text-white">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+        <p>&copy; 2025 Shell2R. All rights reserved. | Educational content for bioinformatics learning.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMobileMenu() {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
-
