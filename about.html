@@ -1,86 +1,188 @@
-<main class="container mx-auto px-4 py-12">
-  <div class="max-w-5xl mx-auto space-y-16">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Shell2R - Learn Bioinformatics Step by Step</title>
+    <meta name="description" content="Learn about Shell2R's mission to make bioinformatics and single-cell RNA-seq analysis accessible to everyone through comprehensive tutorials and guides.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-lg font-bold text-lg">
+                            S2R
+                        </div>
+                        <span class="ml-2 text-xl font-bold text-gray-900">Shell2R</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="index.html#tutorials" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Tutorials</a>
+                        <a href="about.html" class="text-blue-600 bg-blue-50 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                        <button onclick="showLegal()" class="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Legal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">About Shell2R</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Making bioinformatics and single-cell RNA-seq approachable for everyone—through simple, step-by-step tutorials that turn complex analyses into practical skills.
+            </p>
+        </div>
+
+        <!-- Mission Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 mb-4">
+                    At <strong>Shell2R</strong>, our mission is simple: <em>lower the barrier to bioinformatics</em>. 
+                    We believe that modern biology thrives at the intersection of wet-lab discovery and computational power, and we’re here to ensure every researcher can navigate that space confidently. 
+                </p>
+                <p class="text-gray-700 mb-4">
+                    Whether you’re a student just starting out, or a researcher facing single-cell RNA-seq data for the first time, Shell2R provides clear, actionable guidance—from your very first shell command to advanced analytical pipelines.
+                </p>
+            </div>
+        </section>
+
+        <!-- What We Offer -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">What We Offer</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Comprehensive Tutorials</h3>
+                    <p class="text-gray-700">
+                        Step-by-step guides that take you from the basics of Linux commands to complete bioinformatics workflows, designed for hands-on learning.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Single-cell RNA-seq Expertise</h3>
+                    <p class="text-gray-700">
+                        Focused lessons on single-cell analysis—QC, clustering, trajectory inference, and biological interpretation—using tools like Seurat, Scanpy, and beyond.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tool Setup Made Easy</h3>
+                    <p class="text-gray-700">
+                        No more installation headaches—we provide clear installation guides for Conda, Mamba, and essential bioinformatics packages so you can start analyzing right away.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border hover:shadow-md transition">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Real-world Applications</h3>
+                    <p class="text-gray-700">
+                        Learn with practical case studies and datasets, so you can directly apply your skills to real research problems in genomics and computational biology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
+            <div class="bg-white p-8 rounded-lg shadow-sm border">
+                <p class="text-gray-700 mb-4">
+                    Shell2R is built by a team of researchers, educators, and developers who share one goal: 
+                    to make bioinformatics learning accessible worldwide. Our diverse expertise ensures every tutorial is not only technically accurate but also easy to follow.
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Experts in single-cell RNA sequencing and multi-omics data integration</li>
+                    <li>Developers of reproducible workflows and open-source tools</li>
+                    <li>Educators passionate about simplifying complex topics</li>
+                    <li>Researchers advancing genomics and computational biology</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Our Commitment -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Commitment</h2>
+            <div class="bg-blue-50 p-8 rounded-lg border border-blue-200">
+                <p class="text-gray-700 mb-4">
+                    We are committed to keeping our content <strong>free, practical, and up to date</strong>. 
+                    The field of bioinformatics evolves quickly, and our tutorials evolve with it—reflecting the latest methods, tools, and best practices. 
+                </p>
+                <p class="text-gray-700">
+                    Above all, we believe in <em>open science and open education</em>—making sure that anyone, anywhere, can learn the skills needed to analyze biological data and drive discovery.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact CTA -->
+        <section class="text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Let’s Connect</h2>
+            <p class="text-gray-700 mb-6">
+                Got a question, feedback, or an idea for a new tutorial? We’d love to hear from you and keep improving Shell2R together.
+            </p>
+            <a href="contact.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors">
+                Contact Us
+            </a>
+        </section>
+    </main>
+
+     <!-- Footer (unchanged) -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold">S2R</span>
+                        </div>
+                        <h3 class="text-xl font-bold">Shell2R</h3>
+                    </div>
+                    <p class="text-gray-400">Learn Bioinformatics and Single-cell RNA-seq Step by Step</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#tutorials" class="hover:text-white transition-colors">Tutorials</a></li>
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Categories</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition-colors" onclick="filterTutorials('Bioinformatics')">Bioinformatics</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" onclick="filterTutorials('Shell Commands')">Shell Commands</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" onclick="filterTutorials('HPC')">High Performance Computing (HPC)</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" onclick="filterTutorials('Conda')">Conda</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors" onclick="filterTutorials('Single-cell RNA-seq')">Single-cell RNA-seq</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="pages/privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="pages/terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="pages/disclaimer.html" class="hover:text-white transition-colors">Disclaimer</a></li>
+                        <li><a href="pages/cookie-policy.html" class="hover:text-white transition-colors">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Shell2R. All rights reserved. | Educational content for bioinformatics learning.</p>
+            </div>
+        </div>
+    </footer>
     
-    <!-- Hero -->
-    <section class="text-center space-y-6">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900">About Shell2R</h1>
-      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
-        A step-by-step platform for mastering bioinformatics and single-cell RNA-seq analysis —
-        built to make complex computational biology concepts simple, practical, and actionable.
-      </p>
-    </section>
-
-    <!-- Purpose -->
-    <section class="grid md:grid-cols-2 gap-8 items-center">
-      <div>
-        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Our Purpose</h2>
-        <p class="text-gray-600 mb-3">
-          Bioinformatics evolves rapidly. Staying current requires both theory and hands-on practice.
-        </p>
-        <p class="text-gray-600">
-          Shell2R bridges this gap with clear tutorials covering shell commands, HPC, and single-cell RNA-seq —
-          empowering you to analyze real data confidently.
-        </p>
-      </div>
-      <div class="bg-blue-600 p-8 rounded-2xl text-white shadow-lg">
-        <p class="text-lg font-medium">
-          <span class="block text-3xl font-bold mb-2">Step-by-Step Learning</span>
-          Practical tutorials crafted to take you from basics → advanced single-cell analysis.
-        </p>
-      </div>
-    </section>
-
-    <!-- Author -->
-    <section class="text-center space-y-6">
-      <h2 class="text-2xl font-semibold text-gray-900">About the Author</h2>
-      <p class="text-gray-600 max-w-3xl mx-auto">
-        Created by bioinformaticians and educators with years of academic and industry experience. 
-        We craft, peer-review, and update content regularly to ensure accuracy and relevance.
-      </p>
-    </section>
-
-    <!-- What You'll Learn -->
-    <section>
-      <h2 class="text-2xl font-semibold text-gray-900 text-center mb-10">What You'll Learn</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold mb-2">Bioinformatics Fundamentals</h3>
-          <p class="text-gray-600">Core concepts and principles of computational biology.</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold mb-2">Shell Commands</h3>
-          <p class="text-gray-600">Master Unix/Linux commands for automation and data manipulation.</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold mb-2">High-Performance Computing</h3>
-          <p class="text-gray-600">Learn how to use clusters for large-scale bioinformatics analyses.</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold mb-2">Conda & Mamba</h3>
-          <p class="text-gray-600">Manage environments and packages for reproducible research.</p>
-        </div>
-
-        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-          <h3 class="text-lg font-semibold mb-2">Single-cell RNA-seq</h3>
-          <p class="text-gray-600">Step-by-step guides from raw data processing to interpretation.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="text-center space-y-4">
-      <p class="text-lg text-gray-700">
-        Join the Shell2R community and gain the skills to excel in bioinformatics.
-      </p>
-      <a href="contact.html" 
-         class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-medium shadow hover:shadow-lg transition">
-         Contact Us
-      </a>
-    </section>
-    
-  </div>
-</main>
+    <script src="script.js"></script>
+</body>
+</html>
