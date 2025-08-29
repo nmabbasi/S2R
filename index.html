@@ -8,14 +8,14 @@
     <meta name="author" content="Shell2R Team">
     <meta name="robots" content="index, follow">
     
-    <!-- Open Graph tags -->
+    <!-- Open Graph tags for social sharing -->
     <meta property="og:title" content="Shell2R - Learn Bioinformatics and Single-cell RNA-seq Step by Step">
     <meta property="og:description" content="Master computational biology with hands-on tutorials covering shell commands, conda environments, single-cell RNA-seq analysis, and essential bioinformatics tools.">
     <meta property="og:url" content="https://shell2r.com">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://shell2r.com/images/shell2r-logo.png">
     
-    <!-- Twitter Card -->
+    <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Shell2R - Learn Bioinformatics and Single-cell RNA-seq Step by Step">
     <meta name="twitter:description" content="Master computational biology with hands-on tutorials covering shell commands, conda environments, single-cell RNA-seq analysis, and essential bioinformatics tools.">
@@ -26,17 +26,26 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Prism.js CSS -->
+    <!-- Prism.js for syntax highlighting -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     
-    <!-- Google AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2910340533244599" crossorigin="anonymous"></script>
+    <!-- Google AdSense (replace with your actual AdSense code) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+    
+    <!-- Google Analytics (add your tracking ID when ready) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag("js", new Date());
+        gtag("config", "G-XXXXXXXXXX");
+    </script> -->
 </head>
 <body class="bg-gray-50 text-gray-900">
     <!-- Header -->
@@ -53,12 +62,12 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
-                     <a href="/index.html" class="nav-link text-blue-600 bg-blue-50 px-3 py-2 rounded-md font-medium">Home</a>
-                     <a href="/index.html#tutorials" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Tutorials</a>
-                     <a href="/about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
-                     <a href="/contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
-                     <div class="relative group">
-                        <button class="text-teal-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Home</a>
+                    <a href="#tutorials" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Tutorials</a>
+                    <a href="pages/about.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">About</a>
+                    <a href="pages/contact.html" class="nav-link text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 flex items-center">
                             Legal
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -66,10 +75,10 @@
                         </button>
                         <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                             <div class="py-1">
-                                <a href="/pages/privacy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Privacy Policy</a>
-                                <a href="/pages/terms.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Terms of Service</a>
-                                <a href="/pages/disclaimer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Disclaimer</a>
-                                <a href="/pages/cookie.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cookie Policy</a>
+                                <a href="pages/privacy-policy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Privacy Policy</a>
+                                <a href="pages/terms-of-service.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Terms of Service</a>
+                                <a href="pages/disclaimer.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Disclaimer</a>
+                                <a href="pages/cookie-policy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Cookie Policy</a>
                             </div>
                         </div>
                     </div>
@@ -86,14 +95,14 @@
             <!-- Mobile Navigation -->
             <div id="mobile-menu" class="md:hidden hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-2">
-                    <a href="/index.html" class="text-gray-700 hover:text-blue-600 py-2">Home</a>
-                    <a href="/index.html#tutorials" class="text-gray-700 hover:text-blue-600 py-2">Tutorials</a>
-                    <a href="/about.html" class="text-gray-700 hover:text-blue-600 py-2">About</a>
-                    <a href="/contact.html" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
-                    <a href="/pages/privacy.html" class="text-gray-700 hover:text-blue-600 py-2">Privacy Policy</a>
-                    <a href="/pages/terms.html" class="text-gray-700 hover:text-blue-600 py-2">Terms of Service</a>
-                    <a href="/pages/disclaimer.html" class="text-gray-700 hover:text-blue-600 py-2">Disclaimer</a>
-                    <a href="/pages/cookie.html" class="text-gray-700 hover:text-blue-600 py-2">Cookie Policy</a>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 py-2">Home</a>
+                    <a href="#tutorials" class="text-gray-700 hover:text-blue-600 py-2">Tutorials</a>
+                    <a href="pages/about.html" class="text-gray-700 hover:text-blue-600 py-2">About</a>
+                    <a href="pages/contact.html" class="text-gray-700 hover:text-blue-600 py-2">Contact</a>
+                    <a href="pages/privacy-policy.html" class="text-gray-700 hover:text-blue-600 py-2">Privacy Policy</a>
+                    <a href="pages/terms-of-service.html" class="text-gray-700 hover:text-blue-600 py-2">Terms of Service</a>
+                    <a href="pages/disclaimer.html" class="text-gray-700 hover:text-blue-600 py-2">Disclaimer</a>
+                    <a href="pages/cookie-policy.html" class="text-gray-700 hover:text-blue-600 py-2">Cookie Policy</a>
                 </div>
             </div>
         </nav>
@@ -111,13 +120,13 @@
             </div>
         </section>
 
-        <!-- AdSense Placeholder -->
+        <!-- AdSense Placeholder 
         <div class="container mx-auto px-4 py-8">
             <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
                 <h3 class="text-lg font-semibold text-gray-600 mb-2">Google AdSense Ad Placeholder</h3>
                 <p class="text-gray-500">Replace this with your actual AdSense code</p>
-            </div>
-        </div>
+            </div> 
+        </div> -->
 
         <!-- Search Section -->
         <section class="container mx-auto px-4 py-8">
