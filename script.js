@@ -90,7 +90,7 @@ async function loadTutorials() {
                     fetchPath = `lessons/${file}`;
                 } else {
                     // GitHub Pages - use relative path from current location
-                    fetchPath = `/lessons/${file}`;
+                    fetchPath = `lessons/${file}`;
                 }
                 
                 const response = await fetch(fetchPath);
