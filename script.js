@@ -87,10 +87,10 @@ async function loadTutorials() {
                 let fetchPath;
                 if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
                     // Local development
-                    fetchPath = `lessons/${file}`;
+                    fetchPath = `/lessons/${file}`;
                 } else {
                     // GitHub Pages - use relative path from current location
-                    fetchPath = `lessons/${file}`;
+                    fetchPath = `/lessons/${file}`;
                 }
                 
                 const response = await fetch(fetchPath);
