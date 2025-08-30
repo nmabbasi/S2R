@@ -695,6 +695,24 @@ function toggleMobileMenu() {
     mobileMenu.classList.toggle("hidden");
 }
 
+//Newlines from gpt
+// Listen for hash changes to handle header links
+window.addEventListener('hashchange', function() {
+    const hash = window.location.hash;
+    if (hash === '#tutorials') {
+        showTutorials(false); // false = don't push to history again
+    } else if (hash.startsWith('#tutorial-')) {
+        const tutorialId = hash.substring(11);
+        showTutorial(tutorialId, false);
+    } else {
+        showHome(false);
+    }
+});
+
+
+
+
+
 // Function to handle showing different sections/pages
 // This function is now simplified as static pages are handled by direct links
 // and tutorial loading is handled by showTutorial and showTutorials
