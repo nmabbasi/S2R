@@ -695,21 +695,6 @@ function toggleMobileMenu() {
     mobileMenu.classList.toggle("hidden");
 }
 
-//Newlines from gpt
-// Listen for hash changes to handle header links
-window.addEventListener('hashchange', function() {
-    const hash = window.location.hash;
-    if (hash === '#tutorials') {
-        showTutorials(false); // false = don't push to history again
-    } else if (hash.startsWith('#tutorial-')) {
-        const tutorialId = hash.substring(11);
-        showTutorial(tutorialId, false);
-    } else {
-        showHome(false);
-    }
-});
-
-
 
 
 
